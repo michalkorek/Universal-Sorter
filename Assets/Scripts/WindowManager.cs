@@ -9,10 +9,10 @@ public class WindowManager : EditorWindow
     public string defaultString = "amountOfObjects";
     public string[] amountOfObjects, amountOfFloats, amountOfStrings;
 
-    [MenuItem("Window/Sorting Algorithms")]
+    [MenuItem("Window/Universal Sorter")]
     public static void ShowWindow()
     {
-        GetWindow<WindowManager>("Michal Korek/Sorting Algorithms");
+        GetWindow<WindowManager>("Universal Sorter");
     }
 
     private void OnGUI()
