@@ -2,7 +2,7 @@
 
 public enum SorthingAlgorithms
 {
-    QUICK_SORT, MERGE_SORT, SELECTION_SORT, INSERTION_SORT, BUBBLESORT
+    QUICK_SORT, MERGE_SORT, SELECTION_SORT, INSERTION_SORT, BUBBLE_SORT, SHELL_SORT
 }
 
 public class SortManager : MonoBehaviour
@@ -12,6 +12,7 @@ public class SortManager : MonoBehaviour
     public SelectionSort SelectionSort;
     public InsertionSort InsertionSort;
     public BubbleSort BubbleSort;
+    public ShellSort ShellSort;
 
     public SorthingAlgorithms sorthingAlgorithms;
 
@@ -39,8 +40,12 @@ public class SortManager : MonoBehaviour
                 Debug.Log("INSERTION SORT");
                 break;
 
-            case SorthingAlgorithms.BUBBLESORT:
+            case SorthingAlgorithms.BUBBLE_SORT:
                 Debug.Log("BUBBLE SORT");
+                break;
+
+            case SorthingAlgorithms.SHELL_SORT:
+                Debug.Log("SHELL SORT");
                 break;
         }
     }
